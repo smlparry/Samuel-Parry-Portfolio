@@ -1,0 +1,41 @@
+nav {
+  margin: 48px 0;
+  display: block;
+  .links {
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    ul {
+      vertical-align: baseline;
+      li {
+        margin: 0px 25px;
+        display: inline;
+        a {
+          text-decoration: none;
+          color: darken($orange, 25%);
+          font-weight: 500;
+          font-size: 1.1em;
+          &:hover {
+            color: darken($orange, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// media queries
+@media screen and (max-width: 500px){
+  nav {
+    margin: 20px 0;
+    .links {
+      ul {
+        padding: 0 5px;
+        li {
+          display: inline-block;
+          margin: 15px 15px;
+        }
+      }
+    }
+  }
+}

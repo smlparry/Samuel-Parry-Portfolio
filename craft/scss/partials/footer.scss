@@ -1,0 +1,11 @@
+#footer {
+  @include boxed($orange);
+  background: $orange;
+  text-align:center;
+  padding: 30px;
+  color: $white;
+  margin: 40px 15px;
+  &:hover {
+    background: darken($orange,5%);
+  }
+}

@@ -1,0 +1,24 @@
+ <div class="work" id="work">
+  <h1 class="work-heading">Some of my work.</h1>
+  <a href="{{siteUrl}}portfolio/" class="button large pull-right margin-top">View All Work</a>
+  <div class="grid">
+    {% for item in craft.entries.find({ section: 'Portfolio', limit: 4, order: 'dateUpdated desc' }) %}
+      {% for image in item.homepageImage %}
+        <div class="grid-item" style="background:url(/{{ image.url }}) center">
+      {% endfor %}
+        <div class="caption">
+          <h1>{{ item.title }}</h1>
+          {% for tag in item.tags %}
+            <p class="tag">{{ tag }}</p>
+          {% endfor %}
+          <p>{{ item.shortDescription }}</p>
+          <a href="{{ item.url }}" class="button">Read more</a>
+          {% if item.workUrl | length > 0 %}
+            <a href="{{ item.workUrl }}" target="_blank" class="button hollow">View Site</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+    <a href="{{siteUrl}}portfolio/" class="button large">View All Work</a>
+  </div>
+</div>

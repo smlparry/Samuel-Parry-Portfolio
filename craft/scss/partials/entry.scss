@@ -1,0 +1,23 @@
+#entry {
+  img {
+    @include boxed($white);
+    max-width: 100%;
+  }
+  .tags {
+    padding-top: 20px;
+    text-align:center;
+    margin: 0 10px;
+    p.tag {
+      background: darken($white, 5%);
+    }
+  }
+  .content {
+    max-width: 600px;
+    margin: 40px auto;
+    p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      margin: 0 25px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{% extends 'layouts/_layout' %}
+
+{% block content %}
+  {% include 'partials/navbar' %}
+  <div id="entry">
+    {% for image in entry.homepageImage %}
+      <div class="block">
+        <a href="{{entry.workUrl}}">
+          <img src="/{{ image.url }}" alt="{{ image.title }}">
+        </a>
+      </div>
+    {% endfor %}
+    <div class="tags">
+      {% for tag in entry.tags %}
+        <p class="tag">{{ tag }}</p>
+      {% endfor %}
+    </div>
+    <div class="content">
+      <p>{{ entry.description }}</p>
+    </div>
+  </div>
+  {% include 'partials/footer' %}
+{% endblock %}

@@ -1,0 +1,26 @@
+.work {
+  margin: 60px 0;
+  .work-heading {
+    display: inline-block;
+  }
+  .margin-top {
+    margin-top: 15px;
+  }
+}
+
+// Media queries
+@media screen and (max-width: 500px){
+  .work {
+    .work-heading {
+      display: block;
+    }
+    .button {
+      display: block;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .pull-right {
+      float: none;
+    }
+  }
+}

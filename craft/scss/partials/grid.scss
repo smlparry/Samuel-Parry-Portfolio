@@ -1,0 +1,55 @@
+.grid {
+  width: 100%;
+  text-align: center;
+  .grid-item {
+    @include boxed($white);
+    margin: 25px 0;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    .caption {
+      width: 100%;
+      height: 100%;
+      background: $overlayColor;
+      text-align: center;
+      color: $white;
+      padding-top: 50px;
+      h1 {
+        font-weight: 600;
+      }
+      p {
+        margin: 15px auto;
+        text-align: center;
+        max-width: 600px;
+      }
+    }
+  }
+}
+ p.tag {
+  display:inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+}
+
+// media queries
+@media screen and (max-width: 500px) {
+  .grid {
+    .grid-item {
+      .caption {
+        p {
+          display: none;
+        }
+        p.tag {
+          display: inline-block;
+          margin: 5px 5px;
+        }
+        .button {
+          width: 50%;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}

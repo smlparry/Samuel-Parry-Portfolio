@@ -1,0 +1,25 @@
+.button {
+  padding: 15px 15px;
+  background: $orange;
+  border: 1px solid darken($orange, 15%);
+  color: $white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  &:hover {
+    background: darken($orange, 5%);
+  }
+}
+
+.hollow {
+  display: inline-block;
+  background: none;
+  border: 1px solid $white;
+  &:hover {
+    background: rgba(0,0,0,0.2);
+  }
+}
+
+.large {
+  padding: 15px 40px;
+}

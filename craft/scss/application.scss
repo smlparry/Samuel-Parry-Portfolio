@@ -1,0 +1,17 @@
+// Globals
+@import "globals/variables";
+@import "globals/typography";
+@import "globals/general";
+
+// Mixins
+@import "mixins/boxed";
+
+// Partials
+@import "partials/header";
+@import "partials/buttons";
+@import "partials/navbar";
+@import "partials/grid";
+@import "partials/work";
+@import "partials/entry";
+@import "partials/footer";
+@import "partials/resume";

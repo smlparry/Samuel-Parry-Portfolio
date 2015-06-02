@@ -1,0 +1,29 @@
+{% extends 'layouts/_layout' %}
+
+{% block content %}
+  {% include 'partials/navbar' %}
+  <div class="block">
+    <div class="work" id="work">
+      <h1 class="work-heading">My Work.</h1>
+      <div class="grid">
+        {% for item in craft.entries.find({ section: "Portfolio", order: 'dateUpdated desc' }) %}
+          {% for image in item.homepageImage %}
+            <div class="grid-item" style="background:url(/{{ image.url }}) center">
+          {% endfor %}
+            <div class="caption">
+              <h1>{{ item.title }}</h1>
+              {% for tag in item.tags %}
+                <p class="tag">{{ tag }}</p>
+              {% endfor %}
+              <p>{{ item.shortDescription }}</p>
+              <a href="{{ item.url }}" class="button">Read more</a>
+              {% if item.workUrl | length > 0 %}
+                <a href="{{ item.workUrl }}" target="_blank" class="button hollow">View Site</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,8 @@
+@mixin boxed($color) {
+  border-radius: 5px;
+  box-shadow: 0 2px 0 darken($color, 15%);
+  &:hover {
+    transform: translateY(2px);
+    box-shadow: 0 0 0 darken($color, 15%);
+  }
+}

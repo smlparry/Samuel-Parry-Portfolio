@@ -1,0 +1,30 @@
+body, html {
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+ul {
+  list-style: none;
+  margin: none;
+  padding: none;
+  -webkit-padding-start: 0px;
+}
+
+.block {
+  display: block;
+  margin: 20px 10px;
+}
+
+.pull-right {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+
+}

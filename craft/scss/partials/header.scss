@@ -1,0 +1,27 @@
+#header {
+  background: $orange url(/img/header.png) center;
+  @include boxed($orange);
+  min-height: 400px;
+  margin: 30px 0;
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  .content {
+    margin: auto;
+    color: $white;
+    h1 {
+      font-size: 2em;
+    }
+  }
+}
+
+// media queries
+@media screen and (max-width: 500px){
+  #header {
+    .content {
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  }
+}
