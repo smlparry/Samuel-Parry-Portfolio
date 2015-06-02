@@ -23,15 +23,6 @@ return array(
         'database' => 'samuelparry',
     ),
 
-	// The database username to connect with.
-	'user' => 'homestead',
-
-	// The database password to connect with.
-	'password' => 'secret',
-
-	// The name of the database to select.
-	'database' => 'samuelparry',
-
 	// The prefix to use when naming tables. This can be no more than 5 characters.
 	'tablePrefix' => 'craft',
 
