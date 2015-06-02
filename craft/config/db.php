@@ -12,6 +12,17 @@ return array(
 	// The database server name or IP address. Usually this is 'localhost' or '127.0.0.1'.
 	'server' => 'localhost',
 
+	'.dev' => array(
+        'user' => 'root',
+        'password' => 'root',
+        'database' => 'samuelparry',
+    ),
+    '.com' => array(
+        'user' => 'forge',
+        'password' => 'SygU68gppdfKah88YBXw',
+        'database' => 'samuelparry',
+    ),
+
 	// The database username to connect with.
 	'user' => 'homestead',
 
